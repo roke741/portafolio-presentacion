@@ -1,0 +1,148 @@
+body{
+    background-color: #1c0e57;
+}
+.cabecera{
+    background-color: #301891;
+    padding-right: 30px;
+}
+.titulo{
+    color:azure !important;
+    
+    font-size: 30px;
+    font-family: 'Electrolize', sans-serif;
+    padding-left: 10px;
+}
+.nav-link{
+    font-size: 20px;
+}
+.nav-link:hover{
+    text-decoration: underline 5px #1c0e57 ;
+}
+.presentacion{
+    /*ocupar toda la pantalla*/
+    height: 100vh;
+    padding-top: 5%;
+
+}
+
+.saludo{
+    color:azure !important;
+    font-size: 50px;
+    font-family: 'Electrolize', sans-serif;
+    padding-top: 20px;
+}
+
+.nombre{
+    display: block;
+    color:azure !important;
+    font-size: 75px;
+    font-family: 'Nanum Gothic Coding', monospace;
+    
+    white-space: nowrap;
+    border-right: 3px solid;
+
+    width: 13ch;
+    animation: typing 3s steps(13),
+blink .5s infinite step-end alternate;
+
+    overflow: hidden;
+}
+@keyframes typing{
+    from {width: 0;}
+}
+
+@keyframes blink{
+    50% {border-color: transparent;}
+}
+
+@media screen and (max-width: 768px){
+    .nombre{
+        font-size: 50px;
+    }
+}
+    
+
+.descripcion{
+    padding-top: 2%;
+    display: block;
+    width: 50%;
+    font-size: 24px;
+    color: azure;
+    font-family: 'Electrolize', sans-serif;
+}
+.botonredes a{
+    padding-top: 2%;
+    text-decoration: none;
+}
+.botonredes button:hover{
+    background-color: #ffffff6e;
+}
+.botonredes button:focus{
+    box-shadow: none;
+    
+}
+.habilidades{
+    color: azure;
+    font-family: 'Electrolize', sans-serif;
+    padding-top: 2%;
+    /*texto en italica*/
+    font-style: italic;
+    /*texto en negrita
+    font-weight: bold;
+    texto en cursiva
+    font-variant: small-caps;
+    texto en subrayado
+    text-decoration: underline;*/
+}
+.habilidades h1{
+    font-size: 55px;
+    padding-top: 2%;
+}
+.habilidades h2{
+    font-size: 35px;
+}
+.habilidades .row{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #dddddd46;
+    border-radius: 10px;
+    margin-top: 2%;
+}
+
+.parpadeo{
+    background-color: #ffffff;
+    box-shadow: #ffffff 0px 0px 50px;
+    border-radius: 50%;
+
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+.proyectos{
+    color: azure;
+    font-family: 'Electrolize', sans-serif;
+    padding-top: 2%;
+    font-style: italic;
+}
+.proyectos h1{
+    font-size: 55px;
+    padding-top: 2%;
+}
+.proyectos h2{
+    font-size: 35px;
+}
+.proyectos .row{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #dddddd46;
+    border-radius: 10px;
+    margin-top: 2%;
+}
