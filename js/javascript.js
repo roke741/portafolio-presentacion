@@ -73,6 +73,21 @@ window.addEventListener('load', function(){
         }
     }
 });
+
+//JAVA BARRA
+window.addEventListener('load', function(){
+    var bar = this.document.getElementById('barraJAVA');
+    var width = 0;
+    var id = setInterval(frame, 100);
+    function frame() {
+        if (width >= 25) {
+            clearInterval(id);
+        } else {
+            width++;
+            bar.style.width = width + '%';
+        }
+    }
+});
 //////////////Librerias / FrameWork//////////////
 
 //LARAVEL BARRA
@@ -120,14 +135,6 @@ window.addEventListener('load', function(){
         }
     }
 });
-
-
-
-
-
-
-
-
 
 /*window.addEventListener('load', function(){
     var bar = this.document.getElementById('barra');

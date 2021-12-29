@@ -3,7 +3,14 @@ body{
 }
 .cabecera{
     background-color: #301891;
+    box-shadow: #000 0px 0px 10px;
     text-align: center;
+    /*fijar cabecera*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
 }
 .nav-link{
     font-family: 'Electrolize', sans-serif;
@@ -23,13 +30,13 @@ body{
 }
 .presentacion{
     /*ocupar toda la pantalla*/
-    height: 90vh;
-    padding-top: 5%;
+    height: 100vh;
+    padding-top: 10%;
 
 }
 .presentacion h2{
-    font-size: 50px;
-    padding-top: 5%;
+    font-size: 40px;
+    padding-top: 3%;
     font-family: 'Electrolize', sans-serif;
     color: azure;
 }
@@ -46,16 +53,17 @@ body{
     color:azure !important;
     font-size: 75px;
     font-family: 'Nanum Gothic Coding', monospace;
+    height: auto;
     
     white-space: nowrap;
-    border-right: 3px solid;
+    border-right: 4px solid;
 
     width: 13ch;
     animation: typing 3s steps(13),
 blink .5s infinite step-end alternate;
-
     overflow: hidden;
 }
+
 @keyframes typing{
     from {width: 0;}
 }
@@ -65,19 +73,24 @@ blink .5s infinite step-end alternate;
 }
 
 @media screen and (max-width: 768px){
+    .presentacion{
+        padding-top: 25%;
+    }
     .nombre{
-        font-size: 45px;
+        margin-top: 20%;
+        font-size: 43px !important;
+        height: auto;
     }
     .saludo{
-        font-size: 35px;
+        font-size: 37px;
         width: 100%;
     }
     .descripcion{
-        font-size: 18px;
+        font-size: 20px !important;
+        width: 100% !important;
     }
 }
     
-
 .descripcion{
     display: block;
     padding-top: 2%;
@@ -104,22 +117,13 @@ blink .5s infinite step-end alternate;
     padding-bottom: 2%;
     /*texto en italica*/
     font-style: italic;
-    /*texto en negrita
-    font-weight: bold;
-    texto en cursiva
-    font-variant: small-caps;
-    texto en subrayado
-    text-decoration: underline;*/
 }
 /*imagenes*/
 .profile img{
     /*centrar imagen*/
     border: #1c0e57 solid;
     border-radius: 50%;
-
 }
-
-
 
 .habilidades h2{
     font-size: 55px;
@@ -188,3 +192,21 @@ blink .5s infinite step-end alternate;
 .contacto h3{
     font-size: 35px;
 }
+.footer{
+    background-color: #1a162b;
+    color: azure;
+    font-family: 'Electrolize', sans-serif;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-style: italic;
+    text-align: center;
+    width: 100%;
+}
+@media screen and (max-width: 768px){
+    .footer{
+        padding-top: 5%;
+        font-size: 18px;
+        padding-bottom: 5%;
+    }
+}
+    
