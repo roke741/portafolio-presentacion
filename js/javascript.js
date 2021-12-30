@@ -135,7 +135,22 @@ window.addEventListener('load', function(){
         }
     }
 });
+function toast(){
+    var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+    var toastList = toastElList.map(function(toastEl) {
+        return new bootstrap.Toast(toastEl)
+    })
+    toastList.forEach(toast => toast.show()) 
+}
 
+/*     document.getElementById("toastbtn").onclick = function() {
+    var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+    var toastList = toastElList.map(function(toastEl) {
+      return new bootstrap.Toast(toastEl)
+    })
+    toastList.forEach(toast => toast.show()) 
+  }
+} */
 /*window.addEventListener('load', function(){
     var bar = this.document.getElementById('barra');
     var width = 0;

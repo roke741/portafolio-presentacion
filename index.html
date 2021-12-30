@@ -45,20 +45,35 @@
             </div>
         </nav>
     </div>
-
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11; border-radius: 10px;">
+        <div class="toast">
+            <div class="toast-header">
+                              
+                <strong class="me-auto"> 
+                    <span class="iconify" data-icon="ic:baseline-download-for-offline" style="color: #008f39;" data-width="24" data-height="24"> </span>  
+                    Descargando...
+                </strong>
+                <button type="button" class="btn-close bg-white" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>            
+            <div class="toast-body ">
+                <p class="p-0 m-0">La descarga comenzará en breve. Gracias!</p>
+            </div>
+        </div>
+    </div>
     <div class="presentacion">
-        <div class="container">
+        <div class="container p-4">
             <div class="row">
                 <div class="col-7"> 
                     <h1>
                         <span class="saludo">Hola, mi nombre es</span>
                         <span class="nombre">Jhordie Roque </span>
                     </h1>
-                    <p class="py-3">
+                    <p class="py-2">
                         <span class="descripcion">
                             Soy un joven desarrollador web apasionado por la tecnología, la programación, me gusta aprender nuevas tecnologías y crear cosas increíbles.
                         </span>
                     </p>
+                    <button type="button" class="btn btn-primary" id="toastbtn" onclick="toast();">Descargar CV</button>
                 </div>
                 <div class="col-5">
                     <div class="profile d-flex justify-content-center">
@@ -109,11 +124,14 @@
                 </div>
             </div>
         </div>
+        
     </div>
-    <hr style="color:black; height: 20px;">
+    
+    <hr style="color:black; height: 20px; margin: 0;">
     
     <div class="container">
         <div class="habilidades px-2">
+            
             <h2 class="fw-bold"> Mis Habilidades</h2>
             <div class="row">
                 <div class="col">
@@ -276,22 +294,22 @@
             <hr>
             <div class="row py-3">
                 <div class="col-4">
-                    <label for="formGroupExampleInput" class="form-label">Example label</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+                    <label for="formGroupExampleInput" class="form-label">Nombre</label>
+                    <input type="email" class="form-control" id="formGroupExampleInput" placeholder="Junito Fulano">
                     <br>
-                    <label for="formGroupExampleInput" class="form-label">Example label</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+                    <label for="formGroupExampleInput" class="form-label">Correo Electrónico</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="ejemplo@ejemplo.com">
                 </div>
                 <div class="col-8">
-                    <label for="formGroupExampleInput" class="form-label">Example label</label>
+                    <label for="formGroupExampleInput" class="form-label">Escribe tu mensaje</label>
                     <div class="form-floating">
                         <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px; color: black;"></textarea>
-                        <label for="floatingTextarea2" style="color: black;">Comments</label>
+                        <label for="floatingTextarea2" style="color: black;">Hola...</label>
                         
                     </div>
                     <div class="d-grid gap-2 py-2">
                        
-                        <button class="btn btn-primary" type="button">Button</button>
+                        <button class="btn btn-primary" type="button">Enviar</button>
                       </div>
               
                 </div>

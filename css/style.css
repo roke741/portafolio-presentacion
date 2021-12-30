@@ -2,7 +2,7 @@ body{
     background-color: #1c0e57;
 }
 .cabecera{
-    background-color: #301891;
+    background-color: #301891e1;
     box-shadow: #000 0px 0px 10px;
     text-align: center;
     /*fijar cabecera*/
@@ -28,11 +28,33 @@ body{
 .nav-link:hover{
     text-decoration: underline 5px #1c0e57 ;
 }
+.toast{
+    border-radius: 10px;
+}
+.toast-header{
+    background-color: rgb(30,40,45,0.85) !important;
+    color: azure;
+    background-clip:unset;
+}
+.toast-body{
+    background-color: rgba(30, 40, 45, 0.466) !important;
+    color:azure;
+    font-size: 16px;
+}
 .presentacion{
     /*ocupar toda la pantalla*/
     height: 100vh;
-    padding-top: 10%;
+    padding-top: 8%;
+    background-image: url('../img/fondo-presentacion.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
+}
+.presentacion .container{
+    backdrop-filter: blur(25px);
+    border-radius: 15px;
+    box-shadow: #ffffff 0px 0px 5px;
 }
 .presentacion h2{
     font-size: 40px;
@@ -56,7 +78,7 @@ body{
     height: auto;
     
     white-space: nowrap;
-    border-right: 4px solid;
+    border-right: 3px solid;
 
     width: 13ch;
     animation: typing 3s steps(13),
@@ -74,7 +96,12 @@ blink .5s infinite step-end alternate;
 
 @media screen and (max-width: 768px){
     .presentacion{
-        padding-top: 25%;
+        padding-top: 20%;
+    }
+    .presentacion .container{
+        padding: 3% !important;
+        margin: 1% !important;
+        width: auto;
     }
     .nombre{
         margin-top: 20%;
@@ -121,7 +148,7 @@ blink .5s infinite step-end alternate;
 /*imagenes*/
 .profile img{
     /*centrar imagen*/
-    border: #1c0e57 solid;
+    border: #ffffff solid;
     border-radius: 50%;
 }
 
@@ -135,9 +162,12 @@ blink .5s infinite step-end alternate;
 .habilidades .row{
     padding-top: 2%;
     padding-bottom: 2%;
-    background-color: #dddddd46;
+    background-color: #dddddd4d;
     border-radius: 10px;
     margin-top: 2%;
+}
+.habilidades .iconify {
+    filter: drop-shadow(1px 1px 1px #ffffff80);
 }
 
 .parpadeo{
