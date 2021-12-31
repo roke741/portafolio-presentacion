@@ -88,6 +88,21 @@ window.addEventListener('load', function(){
         }
     }
 });
+
+//MYSQL BARRA
+window.addEventListener('load', function(){
+    var bar = this.document.getElementById('barraMYSQL');
+    var width = 0;
+    var id = setInterval(frame, 100);
+    function frame() {
+        if (width >= 30) {
+            clearInterval(id);
+        } else {
+            width++;
+            bar.style.width = width + '%';
+        }
+    }
+});
 //////////////Librerias / FrameWork//////////////
 
 //LARAVEL BARRA
