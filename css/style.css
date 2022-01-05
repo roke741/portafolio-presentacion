@@ -40,7 +40,7 @@ body{
     background-clip:unset;
 }
 .toast-body{
-    background-color: rgba(30, 40, 45, 0.466) !important;
+    /*background-color: rgba(30, 40, 45, 0.466) !important;*/
     color:azure;
     font-size: 16px;
 }
@@ -60,9 +60,8 @@ body{
     border-radius: 15px;
     box-shadow: #ffffff 0px 0px 5px;
 }
-.presentacion h2{
-    font-size: 40px;
-    padding-top: 3%;
+.presentacion h3{
+    font-size: 36px;
     font-family: 'Electrolize', sans-serif;
     color: azure;
 }
@@ -117,8 +116,20 @@ blink .5s infinite step-end alternate;
         width: 100%;
     }
     .descripcion{
-        font-size: 20px !important;
+        font-size: 16px !important;
         width: 100% !important;
+    }
+    .habilidades .row .col-11{
+        width: 100%;
+    }
+    #formulario .col-4{
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    #formulario .col-8{
+        width: 100%;
+        padding-bottom: 15px;
+        
     }
 }
     
@@ -160,18 +171,16 @@ blink .5s infinite step-end alternate;
     font-size: 55px;
     padding-top: 2%;
 }
-.habilidades h3{
-    font-size: 35px;
-}
+
 .habilidades .row{
     padding-top: 2%;
     padding-bottom: 2%;
-    background-color: #dddddd4d;
-    border-radius: 10px;
-    margin-top: 2%;
+    background-color: #f0ffff4d;
+    border-radius: 15px;
+    margin-top: 15px;
 }
 .habilidades .iconify {
-    filter: drop-shadow(1px 1px 1px #ffffff80);
+    filter: drop-shadow(0 0 3px #3a3a3aa9);
 }
 
 .parpadeo{
@@ -205,7 +214,7 @@ blink .5s infinite step-end alternate;
     font-size: 35px;
 }
 .proyectos .row{
-    padding-bottom: 2%;
+    padding-bottom: 20px;
     background-color: #dddddd46;
     border-radius: 10px;
     margin-top: 2%;
@@ -230,10 +239,15 @@ blink .5s infinite step-end alternate;
     color: azure;
     font-family: 'Electrolize', sans-serif;
     padding-top: 2%;
-    padding-bottom: 2%;
+    padding-bottom: 10px;
     font-style: italic;
     text-align: center;
     width: 100%;
+}
+.micomunidad .iconify{
+    padding-right: 5px;
+    padding-top: 5px;
+
 }
 @media screen and (max-width: 768px){
     .footer{
