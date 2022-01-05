@@ -40,7 +40,6 @@ window.addEventListener('load', function(){
 
 //HTML BARRA
 window.addEventListener('scroll', function progreso(){
-
     var mostrar = this.document.getElementById('numero')
     var bar = this.document.getElementById('barraHTML');
     var width = 0;
@@ -58,10 +57,8 @@ window.addEventListener('scroll', function progreso(){
         window.removeEventListener("scroll",progreso);
     }
 });
-
 //CSS BARRA
 window.addEventListener('scroll', function progreso(){
-
     var mostrar = this.document.getElementById('numero1')
     var bar = this.document.getElementById('barraCSS');
     var width = 0;
@@ -102,7 +99,6 @@ window.addEventListener('scroll', function progreso(){
 
 //PHP BARRA
 window.addEventListener('scroll', function progreso(){
-
     var mostrar = this.document.getElementById('numero3')
     var bar = this.document.getElementById('barraPHP');
     var width = 0;
@@ -143,7 +139,6 @@ window.addEventListener('scroll', function progreso(){
 
 //JAVA BARRA
 window.addEventListener('scroll', function progreso(){
-
     var mostrar = this.document.getElementById('numero5')
     var bar = this.document.getElementById('barraJAVA');
     var width = 0;
@@ -165,7 +160,6 @@ window.addEventListener('scroll', function progreso(){
 
 //MYSQL BARRA
 window.addEventListener('scroll', function progreso(){
-
     var mostrar = this.document.getElementById('numero6')
     var bar = this.document.getElementById('barraMYSQL');
     var width = 0;
@@ -186,7 +180,6 @@ window.addEventListener('scroll', function progreso(){
 
 //photoshop BARRA
 window.addEventListener('scroll', function progreso(){
-
     var mostrar = this.document.getElementById('numero7')
     var bar = this.document.getElementById('barraPHOTO');
     var width = 0;
@@ -208,7 +201,6 @@ window.addEventListener('scroll', function progreso(){
 
 //xd BARRA
 window.addEventListener('scroll', function progreso(){
-
     var mostrar = this.document.getElementById('numero8')
     var bar = this.document.getElementById('barraXD');
     var width = 0;
@@ -231,7 +223,6 @@ window.addEventListener('scroll', function progreso(){
 
 //LARAVEL BARRA
 window.addEventListener('scroll', function progreso(){
-
     var mostrar = this.document.getElementById('numero9')
     var bar = this.document.getElementById('barraLARAVEL');
     var width = 0;
@@ -252,7 +243,6 @@ window.addEventListener('scroll', function progreso(){
 
 //REACT BARRA
 window.addEventListener('scroll', function progreso(){
-
     var mostrar = this.document.getElementById('numero10')
     var bar = this.document.getElementById('barraREACT');
     var width = 0;
@@ -273,7 +263,6 @@ window.addEventListener('scroll', function progreso(){
 
 //BOOTSTRAP BARRA
 window.addEventListener('scroll', function progreso(){
-
     var mostrar = this.document.getElementById('numero11')
     var bar = this.document.getElementById('barraBOOTSTRAP');
     var width = 0;
