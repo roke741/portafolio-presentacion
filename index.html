@@ -69,12 +69,14 @@
                         <span class="saludo">Hola, mi nombre es</span>
                         <span class="nombre">Jhordie Roque </span>
                     </h1>
-                    <p>
+                    <p style="text-align: justify;">
                         <span class="descripcion pb-3 ">
                             Soy un desarrollador apasionado por la tecnología, la programación, me gusta aprender nuevas tecnologías y crear cosas increíbles.
                             Entusiasta por el aprendizaje continuo sobre temas java, web y móviles para mejorar en un conocimiento técnico avanzado.
                         </span>
-                        <button type="button" class="btn btn-primary" id="toastbtn" onclick="toast();">Descargar CV</button>
+                        <button type="button" class="btnDescargar px-2" id="toastbtn" onclick="toast();">
+                            <span class="iconify-inline" data-icon="bi:file-earmark-arrow-down" style="color: white;" data-width="18" data-height="18"></span> Descargar CV                      
+                        </button>
                     </p>
                 </div>
                 <div class="col-5">
@@ -231,7 +233,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <span class="iconify" data-icon="simple-icons:adobephotoshop" style="color: #072b77;" data-width="70" data-height="70"></span>                
+                    <span class="iconify" data-icon="simple-icons:adobephotoshop" style="color: #001a70;" data-width="70" data-height="70"></span>                
                 </div>
                 <div class="col-11">
                     <div class="d-flex justify-content-between">
@@ -239,13 +241,13 @@
                         <h3><span id="numero7">0</span>%</h3>
                     </div>
                     <div class="progress">
-                        <div class="progress-bar" id="barraPHOTO" role="progressbar" style="width: 0%; background-color: #072b77;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar" id="barraPHOTO" role="progressbar" style="width: 0%; background-color: #001a70;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <span class="iconify" data-icon="simple-icons:adobexd" style="color: #8c004b;" data-width="70" data-height="70"></span>                
+                    <span class="iconify" data-icon="simple-icons:adobexd" style="color: #8d0056;" data-width="70" data-height="70"></span>                
                 </div>
                 <div class="col-11">
                     <div class="d-flex justify-content-between">
@@ -253,7 +255,7 @@
                         <h3><span id="numero8">0</span>%</h3>
                     </div>
                     <div class="progress">
-                        <div class="progress-bar" id="barraXD" role="progressbar" style="width: 0%; background-color: #8c004b;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar" id="barraXD" role="progressbar" style="width: 0%; background-color: #8d0056;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </div>
             </div>
@@ -288,7 +290,7 @@
                         <h3><span id="numero11">0</span>%</h3>
                     </div>
                     <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-purple" id="barraBOOTSTRAP" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" id="barraBOOTSTRAP" role="progressbar" style="width: 0%; background-color: #5f34ad;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </div>
             </div>
@@ -303,8 +305,45 @@
                     <div class="card">
                         <img src="img/proyecto.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title fw-bold">Pag. Ecommerce</h5>
+                            <h5 class="card-title fw-bold">Tienda Ecommerce</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            
+                            <a href="#" class="btn btn-primary">Visitar web</a>
+                            <a href="#" class="btn btn-dark"><span class="iconify" data-icon="akar-icons:github-fill" style="color: white;" data-width="20" data-height="20"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="img/proyecto.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Pag. React</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Visitar web</a>
+                            <a href="#" class="btn btn-dark"><span class="iconify" data-icon="akar-icons:github-fill" style="color: white;" data-width="20" data-height="20"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="img/proyecto.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Pag. Laravel</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Visitar web</a>
+                            <a href="#" class="btn btn-dark"><span class="iconify" data-icon="akar-icons:github-fill" style="color: white;" data-width="20" data-height="20"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="img/proyecto.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Tienda Ecommerce</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            
                             <a href="#" class="btn btn-primary">Visitar web</a>
                             <a href="#" class="btn btn-dark"><span class="iconify" data-icon="akar-icons:github-fill" style="color: white;" data-width="20" data-height="20"></span></a>
                         </div>
@@ -399,20 +438,20 @@
             </div>
             <div class="col-4">
                 <div class="micomunidad ">
-                    <span class="iconify" data-icon="bi:facebook" style="color: white;" data-width="30" data-height="30"></span>
-                    <span class="iconify" data-icon="bi:whatsapp" style="color: white;" data-width="30" data-height="30"></span>
-                    <span class="iconify" data-icon="bi:instagram" style="color: white;" data-width="30" data-height="30"></span>
-                    <span class="iconify" data-icon="bi:twitter" style="color: white;" data-width="30" data-height="30"></span>
-                    <span class="iconify" data-icon="bi:telegram" style="color: white;" data-width="30" data-height="30"></span>
-                    <span class="iconify" data-icon="bi:github" style="color: white;" data-width="30" data-height="30"></span>
-                    <span class="iconify" data-icon="bi:linkedin" style="color: white;" data-width="30" data-height="30"></span>
-                    <span class="iconify" data-icon="bi:youtube" style="color: white;" data-width="30" data-height="30"></span>
+                    <a href="#"><span class="iconify" data-icon="bi:facebook" style="color: white;" data-width="30" data-height="30"></span></a>
+                    <a href="#"><span class="iconify" data-icon="bi:whatsapp" style="color: white;" data-width="30" data-height="30"></span></a>
+                    <a href="#"><span class="iconify" data-icon="bi:instagram" style="color: white;" data-width="30" data-height="30"></span></a>
+                    <a href="#"><span class="iconify" data-icon="bi:twitter" style="color: white;" data-width="30" data-height="30"></span></a>
+                    <a href="#"><span class="iconify" data-icon="bi:telegram" style="color: white;" data-width="30" data-height="30"></span></a>
+                    <a href="#"><span class="iconify" data-icon="bi:github" style="color: white;" data-width="30" data-height="30"></span></a>
+                    <a href="#"><span class="iconify" data-icon="bi:linkedin" style="color: white;" data-width="30" data-height="30"></span></a>
+                    <a href="#"><span class="iconify" data-icon="bi:youtube" style="color: white;" data-width="30" data-height="30"></span></a>
                 </div>
             </div>
         </div>
         <hr>
         <div class="row ms-0 me-0">
-            <p>Desing by Jhordie Roque</p>
+            <p>Desing 🧡 by Jhordie Roque</p>
             <h6>Copyright &copy; Jhordie Roque 2022. All Rights Reserved</h6>
         </div>
     </footer>

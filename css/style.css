@@ -72,6 +72,51 @@ body{
     font-family: 'Electrolize', sans-serif;
     padding-top: 20px;
 }
+.btnDescargar{
+    /*display: inline-block;*/
+    position: relative;
+    text-align: center;
+    background-color: #1c0e57;
+    color: azure;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    padding: 5px;
+    transition-duration: 0.4s;
+}
+.btnDescargar:hover {
+    transition-duration: 0.1s;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+	background:#12C987;
+    color: azure;   
+} 
+
+.btnDescargar:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 10px;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px white;
+  }
+.btnDescargar:active:after {
+    box-shadow: 0 0 0 0 white;
+    position: absolute;
+    border-radius: 10px;
+    left: 0;
+    top:0;
+    opacity: 1;
+    transition: 0s;
+  }
+.btnDescargar:active {
+    top: 1px;
+}
+  
+/**/
 
 .nombre{
     display: block;
@@ -84,7 +129,7 @@ body{
     border-right: 3px solid;
 
     width: 13ch;
-    animation: typing 3s steps(13),
+    animation: typing 3.5s steps(13),
 blink .5s infinite step-end alternate;
     overflow: hidden;
 }
@@ -180,7 +225,7 @@ blink .5s infinite step-end alternate;
     margin-top: 15px;
 }
 .habilidades .iconify {
-    filter: drop-shadow(0 0 3px #3a3a3aa9);
+    filter: drop-shadow(0 0 1px #a1a1a1);
 }
 
 .parpadeo{
