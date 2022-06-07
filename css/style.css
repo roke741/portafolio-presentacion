@@ -1,5 +1,18 @@
 body{
-    background-color: #1c0e57;
+    /*background-color: #1c0e57;*/
+    background: url(../css/background_wavy.svg) no-repeat center center fixed;
+    background-size: cover;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #1c0e57;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-track{
+    background: #532ee9;
 }
 .cabecera{
     background-color: #301891e1;
@@ -176,6 +189,27 @@ blink .5s infinite step-end alternate;
         padding-bottom: 15px;
         
     }
+}
+.card{
+    
+    transition: all 0.5s;
+}
+.card:hover{
+    box-shadow: 0 0 10px 4px rgb(94, 94, 94);
+    transform: scale(1.1);
+}
+.contruccion::after {
+    content: "EN CONTRUCCION...";
+    background: #000000ab;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
     
 .descripcion{
