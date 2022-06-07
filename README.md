@@ -1,8 +1,8 @@
 # 🔗 Portafolio web
 <h1 align="center">Hola 👋, mi nombre es Jhordie</h1>
 <h2 align="center">BIENVENIDOS A MI PORTAFOLIO 😄⚡️</h2>
-<a href="https://roke741.github.io/portafolio-presentacion/" target="_blank"> Visitar Portafolio </a> 
-#
+<p> Visitar Portafolio 👇👇 </p> 
+
 
 
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://roke741.github.io/portafolio-presentacion/)
